@@ -1,0 +1,13 @@
+<! DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Thymeleaf Jyrki Aho</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<div th:if="${age} ge 18"><p th:text="'Hello, ' + ${name} + '!'" /></div>
+	<div th:unless="${age} ge 18"><p th:text="'You are too young!'" /></div>
+	
+	
+</body>
+</html>
